@@ -61,7 +61,7 @@ if __name__ == "__main__":
     number_of_steps = 32
     
     step_motor2 = Stepper(
-        motor_pins=[17, 18, 22, 23], 
+        motor_pins=[17, 22, 18, 23], 
         number_of_steps = number_of_steps,
         step_sequence = [[1,0,1,0], [0,1,1,0], [0,1,0,1], [1,0,0,1]]
         )
