@@ -1,0 +1,2 @@
+colorzero==2.0
+gpiozero==1.6.2
