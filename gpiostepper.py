@@ -14,12 +14,12 @@ class Stepper:
         self.step_number = 0                                         # Which step the motor is on
         self.number_of_steps = number_of_steps                       # Total number of steps per internal motor revolution
         self.direction = self.CW                                     # Rotation direction
-        self.step_delay = 60 / self.number_of_steps / 240            # Rotation delay (240rpm == 3.90625ms delay)
+        self.step_delay = 60 / self.number_of_steps / 240            # Rotation delay (240rpm == 7.81ms delay)
         
     """Sets speed in revolutions per minute"""
     def set_speed(self, what_speed):
         self.step_delay = 60 / self.number_of_steps / what_speed     # Step delay in seconds
-        print("Step Delay: {}ms".format(self.step_delay * 1000)) 
+        print("Step Delay: {:.2f}ms".format(self.step_delay * 1000)) 
 
     """Moves the motor steps_to_move steps.  If the number is negative, the motor moves in the reverse direction."""
     def step(self, steps_to_move):
