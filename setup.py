@@ -6,5 +6,6 @@ setup(name='gpiozero-steppermotor',
       author='Glenn Fabia',
       author_email='glenfabia@gmail.com',
       url='https://github.com/gfabia/raspberrypi-gpiozero-stepmotor',
-      packages=['gpiozero'],
+      packages=['gpiozero-steppermotor'],
+      install_requires=['gpiozero']
      )
